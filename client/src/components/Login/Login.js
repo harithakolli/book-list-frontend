@@ -13,7 +13,7 @@ const postData = async () =>{
         username : username,
         password: password
     }
-    const resp = await axios.post('http://localhost:4000/login',userInfo)
+    const resp = await axios.post('https://book-list-server.onrender.com/login',userInfo)
     console.log(resp);
     localStorage.setItem('AUTH_TOKEN', resp.data.token);
     navigate('/books')

@@ -16,7 +16,7 @@ const Books = () => {
         const resp = await axios(
             {
                 method: 'get',
-                url: 'http://localhost:4000/book',
+                url: 'https://book-list-server.onrender.com/book',
                 headers: {Authorization: 'test'+ ' ' + token}
             }      
             )
